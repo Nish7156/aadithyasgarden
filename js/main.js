@@ -104,7 +104,7 @@
         });
         BasicSlider.slick({
             autoplay: true,
-            autoplaySpeed: 5000,
+            autoplaySpeed: 3000,
             dots: false,
             fade: true,
             arrows: false,
@@ -168,7 +168,7 @@
     $('.project-active').slick({
         dots: true,
         infinite: true,
-        speed: 1000,
+        speed: 200,
         autoplay: true,
         arrows: false,
         slidesToShow: 4,
