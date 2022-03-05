@@ -25,10 +25,32 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
-<body>
+<body ng-app="myApp">
+    
+
+    <script>
+        var app = angular.module("myApp", ["ngRoute"]);
+        app.config(function($routeProvider) {
+            $routeProvider
+            .when("/", {
+                templateUrl : "main.htm"
+            })
+            .when("/red", {
+                templateUrl : "red.htm"
+            })
+            .when("/green", {
+                templateUrl : "green.htm"
+            })
+            .when("/blue", {
+                templateUrl : "blue.htm"
+            });
+        });
+        </script>
 
     <!-- preloader -->
     <div id="preloader">
@@ -1160,6 +1182,10 @@
                                 <h4><a href="blog-details.html">Pak Choi</a></h4>
                                 <p>Helps Building Bones.</p>
                                 <a href="#" class="arrow-btn">Read More <span></span></a>
+                                <a href="#!red">Red</a>
+<a href="#!green">Green</a>
+<a href="#!blue">Blue</a>
+    <div ng-view></div>
                             </div>
                         </div>
                     </div>
