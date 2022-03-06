@@ -37,9 +37,6 @@
         var app = angular.module("myApp", ["ngRoute"]);
         app.config(function($routeProvider) {
             $routeProvider
-            .when("/", {
-                templateUrl : "main.htm"
-            })
             .when("/red", {
                 templateUrl : "red.htm"
             })
@@ -863,7 +860,7 @@
                                     <a href="#">Micro Greens</a>
                                 </div>
                                 <div class="project-content">
-                                    <h4 ><a data-toggle="modal" data-target="#exampleModalCenter">Contact Us</a></h4>
+                                    <h4 onclick="formSubmit()" ><a data-toggle="modal" data-target="#exampleModalCenter">Contact Us</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -986,7 +983,7 @@
                                 <a href="shop-details.html"><img src="img/product/product5.jpg" alt=""></a>
                             </div>
                             <div class="new-shop-content">
-                                <h5><a href="shop-details.html">Kholrabi</a></h5>
+                                <h5><a href="shop-details.html">Red Amaranth</a></h5>
                                 <!--<h6 class="price">$27.00</h6>-->
                                 <a href="#" class="new-shop-action" data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-phone"></i>Contact Us</a>
                             </div>
@@ -998,7 +995,7 @@
                                 <a href="shop-details.html"><img src="img/product/product3.jpg" alt=""></a>
                             </div>
                             <div class="new-shop-content">
-                                <h5><a href="shop-details.html">Green Mustard</a></h5>
+                                <h5><a href="shop-details.html">Basil</a></h5>
                                 <!--<h6 class="price">$27.00</h6>-->
                                 <a href="#" class="new-shop-action" data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-phone"></i>Contact Us</a>
                             </div>
@@ -1010,7 +1007,7 @@
                                 <a href="shop-details.html"><img src="img/product/product4.jpg" alt=""></a>
                             </div>
                             <div class="new-shop-content">
-                                <h5><a href="shop-details.html">Yellow Mustard</a></h5>
+                                <h5><a href="shop-details.html">Radish</a></h5>
                                 <!--<h6 class="price">$27.00</h6>-->
                                 <a href="#" class="new-shop-action" data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-phone"></i>Contact Us</a>
                             </div>
@@ -1337,7 +1334,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLongTitle"></h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -1345,12 +1342,12 @@
         <div class="modal-body">
                     <div class="row">
                         <div class="col-sm-12">
-                            <form class="md-float-material form-material" action="#" method="POST">
+                            <form class="md-float-material form-material" action="form.php" id="popup" method="POST">
                                 <div class="auth-box card">
                                     <div class="card-block">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <h3 class="text-center heading">Contact Us</h3>
+                                                <h3 class="text-center heading" style="text-decoration: underline;">Contact Us</h3>
                                             </div>
                                         </div>
                                         <div class="form-group form-primary"> <input type="text" class="form-control" name="name" value="" placeholder="Name" id="name"> </div>
@@ -1398,6 +1395,7 @@
     <script src="js/aos.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
     
 <script>
     var dt = new Date();
