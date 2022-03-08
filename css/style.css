@@ -42,6 +42,10 @@ body {
     color: #7d7d7d;
 }
 
+.submenu li :hover{
+    text-decoration: underline !important;
+}
+
 .img {
     max-width: 100%;
     transition: all 0.3s ease-out 0s;
