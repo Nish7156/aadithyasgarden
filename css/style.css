@@ -5491,3 +5491,25 @@ ul.minicart .cart-price .new {
     margin: 0 15px;
     text-align: center
 }
+
+.aa{
+    width: 185px !important;
+}
+.bb{
+    width: 185px !important;
+}
+.cc{
+    width: 185px !important;
+}
+
+@media (max-width: 997px){
+    .aa{
+        width: 100% !important;
+    }
+    .bb{
+        width: 100% !important;
+    }
+    .cc{
+        width: 100% !important;
+    }
+}
