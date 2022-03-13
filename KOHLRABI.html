@@ -160,7 +160,7 @@
                     <div class="col-12">
                         <div class="project-details-wrap">
                             <div class="project-details-top mb-35">
-                                <span class="date">SEPTEMBER 22, 2020</span>
+                                <li><i class="far fa-calendar-alt"></i>Date: <span id="datetime9"></span></li>
                                 <h2 class="title">KOHLRABI</h2>
                                 <span class="project-price">Rs 29.00</span>
                             </div>
@@ -333,6 +333,10 @@
     <script src="js/aos.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime9").innerHTML = (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear());
+        </script>
 </body>
 
 </html>
