@@ -4562,7 +4562,7 @@ ul.minicart .cart-price .new {
 /* 21. Preloader */
 
 #preloader {
-    background: #062a4d;
+    background: #10410a;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -5512,4 +5512,8 @@ ul.minicart .cart-price .new {
     .cc{
         width: 100% !important;
     }
+}
+
+.new-shop-thumb img{
+    cursor: pointer!important;
 }
