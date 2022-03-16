@@ -209,23 +209,24 @@
                     <div class="row justify-content-center">
                         <div class="col-xl-10 col-lg-12">
                             <div class="contact-form">
-                                <form action="#">
+                                <form action="#" id="frmContact">
+                                    <div id="mail-status"></div>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <input type="text" placeholder="Fast Name *">
+                                            <input type="text" id="fname" placeholder="Fast Name *">
                                         </div>
                                         <div class="col-md-6">
-                                            <input type="text" placeholder="Last Name">
+                                            <input type="text" id="lname" placeholder="Last Name">
                                         </div>
                                         <div class="col-md-6">
-                                            <input type="text" placeholder="Phone No">
+                                            <input type="text" id="phone" placeholder="Phone No">
                                         </div>
                                         <div class="col-md-6">
-                                            <input type="email" placeholder="Your Email *">
+                                            <input type="email" id="email" placeholder="Your Email *">
                                         </div>
                                     </div>
                                     <textarea name="message" id="message" placeholder="Message"></textarea>
-                                    <button class="btn gradient-btn">Send Now</button>
+                                    <button class="btn gradient-btn" onClick="sendContact();">Send Now</button>
                                 </form>
                             </div>
                         </div>
@@ -358,6 +359,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIJ_QKHN-bi6_1C9f5eYE3pZs1zhQIo5o"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="./js/form.js"></script>
 </body>
 
 </html>

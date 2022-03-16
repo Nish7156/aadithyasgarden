@@ -5367,12 +5367,12 @@ ul.minicart .cart-price .new {
 }
 
 #logo-img{
-    width: 220px;
+    width: 196px;
     height: auto;
 }
 @media (max-width:997px){
     #logo-img{
-        width: 166px;
+        width: 145px;
         height: auto;
     }
 }
